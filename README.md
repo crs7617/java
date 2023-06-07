@@ -1,2 +1,2 @@
 # java
-Minor java games/projects
+Java projects, games and other concepts
