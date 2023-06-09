@@ -1,15 +1,15 @@
 package game;
-//Java program for the above approach
+import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.random;
 
 public class game1 {
 
-	// Function that implements the
-	// number guessing game
+	// Function that implements
 	public static void
 	guessingNumberGame()
 	{
-		// Scanner Class
+		
 		Scanner sc = new Scanner(System.in);
 
 		// Generate the numbers
@@ -66,6 +66,12 @@ public class game1 {
 				"The number was " + number);
 		}
 	}
+	
+	catch (InputMismatchException e) {
+                System.out.println("Invalid input. Please enter a valid integer.");
+                scanner.nextLine();
+	}
+		// exception block
 
 	// Driver Code
 	public static void
